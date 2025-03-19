@@ -1,6 +1,5 @@
 <?php
 
-
 // carregando folhas de estilos:
 function load_scripts() {
     // chamando arquivo js Bootstrap
@@ -12,12 +11,25 @@ function load_scripts() {
 // Chamando gancho
 add_action( 'wp_enqueue_scripts', 'load_scripts' );
 
-// chamando menus:
-
-register_nav_menus(
+// Configurações do tema:
+function tema_config() {
+    // chamando menus:
+    register_nav_menus(
     array(
         // Slug: nome curto
         'my_main_menu' => 'Main Menu',
         'my_footer_menu' => 'Footer_Menu'
     )
     );
+
+    // Definindo cabeçalho customizavel, habilita a função no wp-admin.
+    $args = array(
+        'height' => 225,
+        'width' => 1920
+    );
+    add_theme_support('custom-header', $args);
+    // Adiciona opção para definir imagem destacada:
+    add_theme_support('post-thumbnails');
+}
+
+add_action('after_setup_theme', 'tema_config', 0);

@@ -1,17 +1,14 @@
-header {
-  width: 100%;
-}
-
-.social-media-icons {
-  background: green;
-  height: 30px;
-}
-
-.search {
-  background: yellow;
-  height: 30px;
-}
+@import url(header.css);
 
 .menu ul li {
   display: inline;
+}
+
+.wp-post-image {
+  float: left;
+  margin: 0 15px 10px 0;
+}
+
+.blog article {
+  display: inline-block;
 }

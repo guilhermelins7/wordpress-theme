@@ -1,6 +1,7 @@
 <!-- chamando header: -->
 <?php get_header(); ?>
-<div class="content-area">
+
+<div class=" content-area">
     <main class="">
         <section class="slide">Slide</section>
         <section class="services">Serviços</section>
@@ -12,18 +13,11 @@
             // Se houver algum post:
             if(have_posts()) {
               // Enquanto houver posts, mostre o post.
-              while( have_posts()):
+              while( have_posts()) {
                 the_post();
-                ?>
-                        <article>
-                            <h2> <?php the_title(); ?> </h2>
-                            <p>Publicado em: <?php echo get_the_date(); ?> por: <?php the_author_posts_link( ); ?> </p>
-                            <p>Categorias: <?php the_category() ?> </p>
-                            <p> <?php the_tags() ?> </p>
-                            <p> <?php the_content() ?> </p>
-                        </article>
-                        <?php
-              endwhile;
+                // Chamando o componente:
+                get_template_part('template-parts/content');
+              }
             } else {
               echo '<p>Não há posts para serem exibidos.</p>';
             }
