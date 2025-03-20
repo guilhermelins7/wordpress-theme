@@ -51,3 +51,12 @@
   flex-direction: row;
   gap: 1rem;
 }
+
+.news {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.widget-wrapper {
+  display: flex;
+}
