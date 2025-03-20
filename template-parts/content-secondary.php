@@ -2,10 +2,12 @@
 
 <article <?php post_class(array( 'class' => 'secondary')) ?>>
     <php? echo get_post_format() ?>
-        <h2> <?php the_title(); ?> </h2>
+        <h2> <a href="<?php the_permalink( ); ?> "><?php the_title(); ?> </a> </h2>
         <div class="thumbnail">
             <!-- chamando thumbnail -->
-            <?php the_post_thumbnail( array(275, 275) ); ?>
+            <a href="<?php the_permalink(); ?>">
+                <?php the_post_thumbnail( array(275, 275) ); ?>
+            </a>
         </div>
         <div class="meta-info">
             by <span> <?php the_author_posts_link( ); ?> </span>
