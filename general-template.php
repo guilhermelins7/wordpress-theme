@@ -6,9 +6,8 @@ Template Name: General Template
 
 <!-- chamando header: -->
 <?php get_header(); ?>
-<!-- Inserindo a imagem: -->
-<img class="img-fluid" src="<?php header_image(); ?>" alt="" height="<?php echo get_custom_header()->heigth; ?>"
-    width="<?php echo get_custom_header()->width; ?>">
+
+<?php get_template_part('template-parts/content', 'banner'); ?>
 
 <div class="content-area">
     <main class="">

@@ -1,14 +1,13 @@
 <!-- chamando header: -->
 <?php get_header(); ?>
 
+<?php get_template_part('template-parts/content', 'banner'); ?>
+
 <div class=" content-area">
     <main class="">
-        <section class="slide">Slide</section>
-        <section class="services">Serviços</section>
         <section class="middle-area">
             <div class="container">
                 <div class="row">
-                    <aside class="sidebar col-md-4">Barra lateral</aside>
                     <div class="new col-md-8"> <?php
             // Se houver algum post:
             if(have_posts()) {
@@ -23,10 +22,10 @@
             }
                 ?>
                     </div>
+                    <aside class="sidebar col-md-4 h-100"><?php echo get_sidebar() ?></aside>
                 </div>
             </div>
         </section>
-        <section class="map">Mapa</section>
     </main>
 </div>
 

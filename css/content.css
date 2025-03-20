@@ -1,18 +1,18 @@
 /* Slider */
 .slide {
-  padding: 25px 0;
+  padding: 1.5rem;
 }
 
 /* Services */
 .services {
   background: #4c1b1b;
-  padding: 25px 0;
+  padding: 25px;
   color: #fefefe;
 }
 
 /* Middle Area */
 .middle-area {
-  padding: 25px 0;
+  padding: 1.5rem;
 }
 .middle-area h1 {
   color: #4c1b1b;
@@ -24,4 +24,8 @@
   background: #f6e497;
   padding: 20px;
   margin: 0 0 30px;
+}
+
+.post-categories {
+  list-style: none;
 }
