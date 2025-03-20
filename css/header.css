@@ -1,13 +1,23 @@
-header {
-  width: 100%;
+.menu ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #231f20;
+  transition: 0.3s;
 }
 
-.social-media-icons {
-  background: green;
-  height: 30px;
+/* Destacar o menu ativo */
+.menu ul li.current-menu-item a {
+  color: #b22222; /* Vermelho */
 }
 
-.search {
-  background: yellow;
-  height: 30px;
+.menu ul li a:hover {
+  color: #b22222;
+}
+
+/* Top Bar Section */
+.top-bar {
+  background: #b9121b;
+  color: #fff;
+  padding: 15px 0;
 }

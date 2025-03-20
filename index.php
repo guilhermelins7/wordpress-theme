@@ -15,8 +15,8 @@
               // Enquanto houver posts, mostre o post.
               while( have_posts()) {
                 the_post();
-                // Chamando o componente:
-                get_template_part('template-parts/content');
+                // Chamando o componente, com base no se formato:
+                get_template_part('template-parts/content', get_post_format());
               }
             } else {
               echo '<p>Não há posts para serem exibidos.</p>';

@@ -1,0 +1,27 @@
+/* Slider */
+.slide {
+  padding: 25px 0;
+}
+
+/* Services */
+.services {
+  background: #4c1b1b;
+  padding: 25px 0;
+  color: #fefefe;
+}
+
+/* Middle Area */
+.middle-area {
+  padding: 25px 0;
+}
+.middle-area h1 {
+  color: #4c1b1b;
+  text-transform: uppercase;
+}
+
+/* Middle Area - Sidebar */
+.sidebar {
+  background: #f6e497;
+  padding: 20px;
+  margin: 0 0 30px;
+}

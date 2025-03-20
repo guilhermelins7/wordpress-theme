@@ -30,6 +30,8 @@ function tema_config() {
     add_theme_support('custom-header', $args);
     // Adiciona opção para definir imagem destacada:
     add_theme_support('post-thumbnails');
+    // Adicionando formatos de post:
+    add_theme_support('post-formats', array( 'video', 'image' ) );
 }
 
 add_action('after_setup_theme', 'tema_config', 0);

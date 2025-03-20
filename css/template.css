@@ -1,14 +1,65 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,900");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,900");
+
 @import url(header.css);
+@import url(content.css);
+@import url(blog.css);
+@import url(footer.css);
 
-.menu ul li {
-  display: inline;
+body {
+  font: 16px/1.6 "Oswald", sans-serif;
+}
+body p {
+  font: 16px/1.6 "Lato", sans-serif;
+}
+h1 {
+  font-size: 28px;
+  margin: 15px 0 15px;
+}
+h2 {
+  font-size: 24px;
+  margin-top: 0;
+}
+h3 {
+  font-size: 20px;
+  margin-top: 0;
+}
+h4 {
+  font-size: 18px;
+  margin-top: 0;
 }
 
-.wp-post-image {
-  float: left;
-  margin: 0 15px 10px 0;
+/* Top Bar Section */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  background: #b9121b;
+  color: #fff;
+  padding: 1rem 3rem;
 }
 
-.blog article {
-  display: inline-block;
+.menu-area {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #f8f8f8;
+  padding: 1rem 2rem;
+  border-top: 5px solid #b22222;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+/* Remove estilos padrão do wp_nav_menu */
+.menu ul {
+  display: flex; /* Deixa os itens em linha */
+  list-style: none; /* Remove os marcadores da lista */
+  padding: 0;
+  margin: 0;
+  justify-content: flex-end; /* Centraliza os itens */
+  gap: 20px; /* Espaço entre os itens */
 }
