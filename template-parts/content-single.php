@@ -10,7 +10,7 @@
     </header>
 
     <div class="content">
-        <?php the_content(); ?>
+        <?php the_excerpt(); ?>
     </div>
 
 </article>
