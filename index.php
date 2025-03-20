@@ -23,7 +23,10 @@
                           }
                         ?>
                     </div>
-                    <aside class="sidebar col-md-4 h-100"><?php echo get_sidebar() ?></aside>
+                    <aside class="sidebar col-md-4 h-100">
+                        <?php get_search_form() ?>
+                        <?php echo get_sidebar() ?>
+                    </aside>
                 </div>
             </div>
         </section>

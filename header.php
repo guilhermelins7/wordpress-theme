@@ -15,7 +15,7 @@
                 Icones Sociais
             </div>
             <div class="search">
-                Pesquisa
+                <?php get_search_form(); ?>
             </div>
         </section>
         <section class="menu-area">
