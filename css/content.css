@@ -29,3 +29,25 @@
 .post-categories {
   list-style: none;
 }
+
+/* Serices */
+
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.services h1 {
+  align-items: center;
+  text-align: center;
+}
+
+.services__conteudo {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr; */
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}

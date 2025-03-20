@@ -3,9 +3,9 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,900");
 
 @import url(header.css);
-@import url(content.css);
 @import url(blog.css);
 @import url(footer.css);
+@import url(content.css);
 
 body {
   font: 16px/1.6 "Oswald", sans-serif;
