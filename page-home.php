@@ -1,12 +1,12 @@
 <!-- chamando header: -->
 <?php get_header(); ?>
 
-<?php get_template_part('template-parts/content', 'banner'); ?>
+<?php get_template_part('template-parts/banner'); ?>
 
 <div class="content-area">
     <main class="">
         <section class="slide">Slide</section>
-        <section class="services">Serviços</section>
+        <?php get_template_part( 'template-parts/services' ) ?>
         <section class="middle-area">
             <div class="container">
                 <div class="row">

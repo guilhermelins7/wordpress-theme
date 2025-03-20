@@ -7,7 +7,7 @@ Template Name: General Template
 <!-- chamando header: -->
 <?php get_header(); ?>
 
-<?php get_template_part('template-parts/content', 'banner'); ?>
+<?php get_template_part('template-parts/banner'); ?>
 
 <div class="content-area">
     <main class="">

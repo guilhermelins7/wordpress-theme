@@ -63,13 +63,53 @@ function sidebars() {
             );
 }
 
+// Criando widgets de serviço:
+function servicos_widget(): void {
+    $widgets = array(
+        array(
+            'name'        => 'Service 1',
+            'id'          => 'services-1',
+            'description' => 'Primeira área de serviço.',
+        ),
+        array(
+            'name'        => 'Service 2',
+            'id'          => 'services-2',
+            'description' => 'Segunda área de serviço.',
+        ),
+        array(
+            'name'        => 'Service 3',
+            'id'          => 'services-3',
+            'description' => 'Terceira área de serviço.',
+        )
+    );
+
+    foreach ( $widgets as $widget ) {
+        register_sidebar(
+            array(
+                'name'          => $widget['name'],
+                'id'            => $widget['id'],
+                'description'   => $widget['description'],
+                'before_widget' => '<div class="widget-wrapper">',
+                'after_widget'  => '</div>',
+                'before_title'  => '<h2 class="widget-title">',
+                'after_title'   => '</h2>',
+            )
+        );
+    }
+}
+
+function widgets(): void {
+    sidebars();
+    servicos_widget();
+}
+
 add_action('after_setup_theme', 'tema_config', 0);
 
 // Criando uma side-bar para adicionar widgets:
-add_action( 'widgets_init', 'sidebars' );
+add_action( 'widgets_init', 'widgets' );
 
 // Funções lógicas:
-function tipo_sidebar() {
+function tipo_sidebar(): string {
     if (is_home()) {
         return 'sidebar-2'; 
     } 
