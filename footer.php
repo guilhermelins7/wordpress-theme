@@ -10,9 +10,9 @@
         </div>
     </div>
 </footer>
-<!-- <script type="text/javascript"
+<script type="text/javascript"
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js?ver=5.3.3" id="bootstrap-js-js">
-</script> -->
+</script>
 <?php wp_footer(); ?>
 </body>
 
