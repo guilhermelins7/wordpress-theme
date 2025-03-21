@@ -114,13 +114,13 @@ function widgets(): void {
 
 add_action('after_setup_theme', 'tema_config', 0);
 
-// Criando uma side-bar para adicionar widgets:
+// passando os widgets do projeto:
 add_action( 'widgets_init', 'widgets' );
 
 // Funções lógicas:
 function tipo_sidebar(): string {
-    if (is_home()) {
-        return 'sidebar-2'; 
-    } 
-    return 'sidebar-1';
+    if (!is_home()) {
+        return 'sidebar-1';
+    }
+    return 'sidebar-2';
 }

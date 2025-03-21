@@ -8,12 +8,16 @@
         <section class="slide">Slide</section>
         <?php get_template_part( 'template-parts/services' ) ?>
         <section class="middle-area">
-            <div class="container">
-                <h1>Últimas notícias</h1>
+            <div class="row">
+                <aside class=" container sidebar col-3">
+                    <?php echo get_sidebar() ?>
+                </aside>
+                <div class=" container col-8">
+                    <h1>Últimas notícias</h1>
 
-                <!-- Post Principal -->
-                <div class="row">
-                    <?php 
+                    <!-- Post Principal -->
+                    <div class="row">
+                        <?php 
                     $args = array(
                         'post_type'      => 'post',
                         'posts_per_page' => 1,
@@ -26,19 +30,19 @@
                         while ($featured->have_posts()) {
                             $featured->the_post();
                     ?>
-                    <div class="col-12 mb-4">
-                        <?php get_template_part('template-parts/content', 'featured'); ?>
-                    </div>
-                    <?php
+                        <div class="col-12 mb-4">
+                            <?php get_template_part('template-parts/content', 'featured'); ?>
+                        </div>
+                        <?php
                         }
                         wp_reset_postdata();
                     }
                     ?>
-                </div>
+                    </div>
 
-                <!-- Posts Secundários -->
-                <div class="row">
-                    <?php 
+                    <!-- Posts Secundários -->
+                    <div class="row">
+                        <?php 
                     $args2 = array(
                         'posts_per_page'   => 2,
                         'category__not_in' => array(8),
@@ -52,14 +56,15 @@
                         while ($secondary->have_posts()) {
                             $secondary->the_post();
                     ?>
-                    <div class="col-sm-6 mb-4">
-                        <?php get_template_part('template-parts/content', 'secondary'); ?>
-                    </div>
-                    <?php
+                        <div class="col-sm-6 mb-4">
+                            <?php get_template_part('template-parts/content', 'secondary'); ?>
+                        </div>
+                        <?php
                         }
                         wp_reset_postdata();
                     }
                     ?>
+                    </div>
                 </div>
             </div>
 
