@@ -11,10 +11,10 @@
         <?php get_template_part( 'template-parts/services' ) ?>
         <section class="middle-area">
             <div class="row">
-                <aside class=" container sidebar col-3">
+                <aside class=" container sidebar col-lg-4 col-xl-3">
                     <?php echo get_sidebar() ?>
                 </aside>
-                <div class=" container col-8">
+                <div class=" container col-lg-8 col-xl-9">
                     <h1>Últimas notícias</h1>
 
                     <!-- Post Principal -->
@@ -71,7 +71,12 @@
             </div>
 
         </section>
-        <section class="map">Mapa</section>
+        <section class="map">
+            <iframe width="100%" height="350" style="border:0" loading="lazy" allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBdx0ju5BuL8HzEmBvM0OlrHx7SfS08X3w
+                &q=Space+Needle,Seattle+WA&zoom=15">
+            </iframe>
+        </section>
     </main>
 </div>
 
