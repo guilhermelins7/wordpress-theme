@@ -5,7 +5,9 @@
 
 <div class="content-area">
     <main class="">
-        <section class="slide">Slide</section>
+        <section class="slide">
+            <?php echo do_shortcode('[recent_post_slider design="design-2" limit="3" ]') ?>
+        </section>
         <?php get_template_part( 'template-parts/services' ) ?>
         <section class="middle-area">
             <div class="row">

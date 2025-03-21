@@ -1,6 +1,10 @@
-/* Slider */
-.slide {
-  padding: 1.5rem;
+.wppsac-post-content-left {
+  display: flex;
+  align-items: center;
+}
+
+.wppsac-post-slider .wppsac-post-image-bg {
+  min-height: 37rem;
 }
 
 /* Services */
