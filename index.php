@@ -17,6 +17,18 @@
                               the_post();
                               // Chamando o componente, com base no se formato:
                               get_template_part('template-parts/content', get_post_format());
+                            ?>
+                        <!-- Criando navegação por páginação: -->
+                        <div class="row">
+                            <div class="pages text-start col-6">
+                                <?php previous_posts_link('<< Posts mais novos') ?>
+                            </div>
+                            <div class="pages text-end col-6">
+                                <?php next_posts_link('Posts mais antigos >>'); ?>
+                            </div>
+                        </div>
+
+                        <?php
                             }
                           } else {
                             echo '<p>Não há posts para serem exibidos.</p>';
