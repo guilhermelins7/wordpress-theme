@@ -2,10 +2,10 @@
 
 <div class="primary">
     <main>
-        <h2>Resultados de pesquisa para: <?php echo get_search_query(); ?> </h2>
-
-        <div class="contianer">
-            <?php
+        <div class="container">
+            <div class="search-content">
+                <h2>Resultados de pesquisa para: <?php echo get_search_query(); ?> </h2>
+                <?php
                 while(have_posts()) {
                     the_post();
                     get_template_part( 'template-parts/content', 'search' );
@@ -23,7 +23,9 @@
                     )
                 );
             ?>
+            </div>
         </div>
+
     </main>
 </div>
 

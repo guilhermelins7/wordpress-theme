@@ -25,7 +25,7 @@
 
 /* Middle Area - Sidebar */
 .sidebar {
-  background: #f6e497;
+  background: #2e2b7d;
   padding: 20px;
   margin: 0 0 30px;
 }
@@ -41,6 +41,7 @@
   flex-direction: column;
   gap: 2rem;
   padding: 2rem;
+  background-color: #1b1d4c;
 }
 
 .services h1 {
@@ -56,11 +57,17 @@
   gap: 1rem;
 }
 
-.news {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
 .widget-wrapper {
   display: flex;
+}
+
+.cat-item .cat-item-8 {
+  color: #fff;
+  text-decoration: none;
+}
+
+.search-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
