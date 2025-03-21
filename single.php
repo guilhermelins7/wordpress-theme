@@ -1,8 +1,8 @@
 <?php get_header() ?>
 
 <div class="primary">
-    <main>
-        <div class="contianer">
+    <main class="post-area">
+        <div class="container">
             <?php
                 while(have_posts()) {
                     the_post();
@@ -20,13 +20,15 @@
                 </div>
             </div>
 
-            <?php
+            <div class="container">
+                <?php
                         // Carregando seção de comentários:
                         if( comments_open() || get_comments_number() ) {
                             comments_template();
                         }
                     }
                 ?>
+            </div>
         </div>
     </main>
 </div>
