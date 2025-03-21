@@ -8,15 +8,19 @@
         <section class="middle-area">
             <div class="container">
                 <div class="row">
-                    <div class="new col-md-8">
+                    <div class="archive col-md-8">
                         <?php
+
+                            the_archive_title( '<h1 class="archive-title"', '</h1>' );
+                            the_archive_description();
+
                           // Se houver algum post:
                           if(have_posts()) {
                             // Enquanto houver posts, mostre o post.
                             while( have_posts()) {
                               the_post();
                               // Chamando o componente, com base no se formato:
-                              get_template_part('template-parts/content', get_post_format());
+                              get_template_part('template-parts/content', 'archive');
                             }
                             ?>
                         <!-- Criando navegação por páginação: -->
