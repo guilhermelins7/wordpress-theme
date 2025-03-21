@@ -43,6 +43,8 @@ function tema_config() {
     add_theme_support('post-formats', array( 'video', 'image' ) );
     // Adicionando títulos dinâmicos de página:
     add_theme_support('title-tag'); 
+    // Adicionando logo customizado:
+    add_theme_support( 'custom-logo', array('height' => 110, 'width' => 200) );
 }
 
 // Criando e definindo a side-bar:

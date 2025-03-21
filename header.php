@@ -26,7 +26,7 @@
         </section>
         <section class="menu-area">
             <section class="logo">
-                Logo
+                <?php echo get_custom_logo( ); ?>
             </section>
             <nav class="menu">
                 <!-- Chamando o menu criado: -->
