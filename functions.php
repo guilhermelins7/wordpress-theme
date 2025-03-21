@@ -89,6 +89,11 @@ function servicos_widget(): void {
             'name'        => 'Service 3',
             'id'          => 'services-3',
             'description' => 'Terceira área de serviço.',
+        ),
+        array(
+            'name'        => 'Social Icons',
+            'id'          => 'social-media',
+            'description' => 'Coloque seus icones aqui',
         )
     );
 

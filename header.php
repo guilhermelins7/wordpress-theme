@@ -16,7 +16,9 @@
     <header class="">
         <section class="top-bar">
             <div class="social-media-icons">
-                Icones Sociais
+                <?php if(is_active_sidebar( 'social-media' )){
+                    dynamic_sidebar( 'social-media' );
+                } ?>
             </div>
             <div class="search">
                 <?php get_search_form(); ?>
